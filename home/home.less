@@ -1,0 +1,205 @@
+@import "../lib/base";
+
+#m-nav {
+  > a {
+    width: 33.3%;
+    &:active {
+      background-color: #f0f0f0;
+    }
+    > div {
+      padding: 10px 0;
+      > .img-wrapper {
+        width: 35px;
+        max-width: 35px;
+      }
+      > .title {
+        line-height: 40px;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+#m-today {
+  > .text-center {
+    line-height: 45px;
+    border-bottom: 1px solid @bg_body;
+  }
+  > .banner {
+    > ul > li {
+      height: 145px;
+      > div {
+        padding: 10px 0 0 64/7.5%;
+        > .img-wrapper {
+          width: 119px;
+          height: 119px;
+        }
+        > .content {
+          padding-left: 64/7.5%;
+          > .title {
+            line-height: 26px;
+          }
+          > .price {
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#m-season {
+  > .fz-18 {
+    line-height: 38px;
+  }
+  > .fz-12 {
+    line-height: 1em;
+    padding-bottom: 13px;
+  }
+  > .horizontal-scroll {
+    > .wrapper {
+      padding-bottom: 15px;
+      > .item {
+        padding: 0 5px;
+        width: 100px;
+        &:first-child {
+          padding-left: 10px;
+        }
+        &:last-child {
+          padding-right: 10px;
+        }
+        > .img-wrapper {
+          width: 100px;
+          height: 100px;
+        }
+        > .title {
+          line-height: 18px;
+        }
+        > .price {
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+#m-week {
+  > .title {
+    line-height: 40px;
+    height: 40px;
+    > .tail {
+      width: 70px;
+      height: 100%;
+      &.left {
+        background: url("img/left-tail.png") center center no-repeat;
+        background-size: 100% 3px;
+      }
+      &.right {
+        background: url("img/right-tail.png") center center no-repeat;
+        background-size: 100% 3px;
+      }
+    }
+    > .fz-18 {
+      padding: 0 1em;
+    }
+  }
+  > .filter {
+    border-top: 1px solid @aaa;
+    border-bottom: 1px solid @aaa;
+    height: 16px;
+    line-height: 16px;
+    padding: 10px 0;
+    > div {
+      width: 33.3%;
+      > div {
+        border-left: 1px solid @aaa;
+        > span {
+          line-height: 1em;
+        }
+      }
+      &:first-child > div {
+        border-left: none;
+      }
+    }
+  }
+  > .foods {
+    > li {
+      margin-bottom: 10px;
+      background-color: @white;
+      padding: 10px 0 10px 10px;
+      height: 100px;
+      .relative;
+      > .img-wrapper {
+        width: 100px;
+        height: 100px;
+      }
+      > .content {
+        padding-left: 110px;
+        > .title, > .intro {
+          line-height: 1.5em;
+        }
+        > .activity {
+          padding: 7px 0;
+        }
+        .add-cart {
+          .absolute;
+          right: 56/7.5%;
+          top: 68px;
+        }
+        > .prices {
+          padding-top: 6px;
+        }
+      }
+    }
+  }
+}
+
+#food-filter-overlay {
+  .overlay-content {
+    width: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    > .filter {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      flex-basis: 100%;
+      -webkit-flex-basis: 100%;
+      padding: 10px 0;
+      border-top: 1px solid #aaa;
+      border-bottom: 1px solid #aaa;
+      > div {
+        -moz-box-flex: 1; /* Firefox */
+        -webkit-box-flex: 1; /* Safari 和 Chrome */
+        box-flex: 1;
+        flex-basis: 100%;
+        -webkit-flex-basis: 100%;
+        border-left: 1px solid @aaa;
+        > div > span {
+          line-height: 1em;
+        }
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+    > .list-wrapper {
+      padding: 10px 42px;
+      > div {
+        > a {
+          padding: 7px 0;
+          .fz-14;
+          .block;
+          > i {
+            .round;
+            .col-white;
+            .text-center;
+            .with-padding;
+            .inline-block;
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../lib/common.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="template.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 公共头开始 -->
+<div id="header">
+    <div class="pull-left">
+        <div class="return"><a href="javascript:_.go();"></a></div>
+        <div class="locate fz-18"><a href="javascript:location.reload(true);">北京</a></div>
+    </div>
+    <div class="pull-right">
+        <div class="search"><a href="javascript:"></a></div>
+        <div class="message has-new"><a href="javascript:"></a></div>
+    </div>
+    <div>
+        <a href="/" class="logo"></a>
+
+        <div class="search-input hidden">
+            <input type="text" name="wd"/>
+        </div>
+    </div>
+</div>
+<!-- 公共头结束 -->
+
+<!--
+页面内容区
+ 可以有多个模块, 模块类名为module
+ 例子:
+
+ <div class="module" id="module-1">
+    some content
+ </div>
+ <div class="module" id="module-2">
+    some other content
+ </div>
+-->
+
+
+
+<!-- 公共底部开始 -->
+<div id="footer">
+</div>
+<!-- 公共导航 -->
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="/" class="inline-block fz-12 home col-red">首页</a>
+        <a href="#" class="inline-block fz-12 category">分类</a>
+        <a href="#" class="inline-block fz-12 cart"><span><span class="cart-num">12</span></span>购物车</a>
+        <a href="#" class="inline-block fz-12 mine">我的</a>
+    </div>
+</div>
+</body>
+<!-- 公共js库引入 -->
+<script src="../lib/zepto-1.1.6.js"></script>
+<script src="../lib/zepto.fx.js"></script>
+<script src="../lib/zepto.cookie.js"></script>
+<script src="../lib/zepto.data.js"></script>
+<script src="../lib/zepto.touch.js"></script>
+<script src="../lib/zepto.unslider.js"></script>
+<script src="../lib/common.js"></script>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入-->
+<script src="template.js"></script>
+</html>
