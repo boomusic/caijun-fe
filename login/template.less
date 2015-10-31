@@ -1,0 +1,47 @@
+@import "../lib/base";
+
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+
+#m-tab {
+  > a {
+    .inline-block;
+    width: 50%;
+    padding: 13px 0;
+    > span {
+      .block;
+      .text-center;
+      .fz-16;
+      line-height: 1em;
+    }
+    &:first-child > span {
+      border-right: 1px solid @bg_body;
+    }
+    border-bottom: 1px solid transparent;
+    &.col-red {
+      border-bottom: 1px solid @red;
+    }
+  }
+}
+
+#m-login, #m-register {
+  padding: 10px 20px;
+}
+
+#form-group-register-captcha {
+  > a {
+    border-radius: 4px;
+    border: 1px solid @red;
+    height: 43px;
+    line-height: 43px;
+    padding: 0 0.5em;
+    width: 7em;
+    .bg-white;
+    .text-center;
+  }
+  >.input-group {
+    margin-right: 135px;
+    >input{
+      text-indent: 1em;
+    }
+  }
+}

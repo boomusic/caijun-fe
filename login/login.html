@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../lib/common.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="template.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 公共头开始 -->
+<div id="header">
+    <div class="pull-left">
+        <a class="return" href="javascript:_.go();"></a>
+        <a class="locate fz-18" href="javascript:location.reload(true);">北京</a>
+    </div>
+    <div class="text-center">
+        <a class="login fz-18">登录</a>
+        <a class="register fz-18 force-hidden">注册</a>
+    </div>
+</div>
+<!-- 公共头结束 -->
+
+<div class="module" id="m-tab">
+    <a href="javascript:" class="login col-red"><span>登录</span></a>
+    <a href="javascript:" class="register"><span>注册</span></a>
+</div>
+
+<div class="module bg-body" id="m-login">
+    <form>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon user"></div>
+                <input id="input-phone" type="number" name="phone" data-validate="phone" placeholder="手机号"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon password"></div>
+                <input id="input-password" type="password" name="password" placeholder="密码"/>
+            </div>
+        </div>
+        <div class="col-red fz-12 bt-10"><a href="">忘记密码?</a></div>
+        <div class="form-group">
+            <input type="button" value="登录" class="btn btn-block btn-red btn-submit"/>
+        </div>
+    </form>
+</div>
+
+<div class="module bg-body force-hidden" id="m-register">
+    <form>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon user"></div>
+                <input id="input-new-phone" type="number" name="phone" data-validate="phone" placeholder="手机号"/>
+            </div>
+        </div>
+        <div class="form-group" id="form-group-register-captcha">
+            <a href="javascript:" class="pull-right fz-15 col-red">获取短信验证码</a>
+
+            <div class="input-group">
+                <input id="input-captcha" type="text" data-validate="length:4,4:验证码不正确" name="captcha" placeholder="验证码"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon password"></div>
+                <input id="input-new-password" type="password" name="password" data-validate="length:6:密码过短" placeholder="密码"/>
+            </div>
+        </div>
+        <div class="fz-12 bt-10"><i class="icon icon-accept gray"></i>&nbsp;&nbsp;我已阅读并同意<a href="#" class="text-underline col-red">用户协议</a></div>
+        <div class="form-group">
+            <input type="button" value="注册" class="btn btn-block btn-red btn-submit"/>
+        </div>
+    </form>
+</div>
+
+<!-- 公共底部开始 -->
+<div id="footer">
+</div>
+<!-- 公共导航 -->
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="../home/home.html" class="home col-red">首页</a>
+        <a href="../" class="category">分类</a>
+        <a href="../cart/cart.html" class="cart"><span><span class="cart-num">12</span></span>购物车</a>
+        <a href="../login/login.html" class="mine">我的</a>
+    </div>
+</div>
+</body>
+<!-- 公共js库引入 -->
+<script src="../lib/zepto-1.1.6.js"></script>
+<script src="../lib/zepto.fx.js"></script>
+<script src="../lib/zepto.cookie.js"></script>
+<script src="../lib/zepto.data.js"></script>
+<script src="../lib/zepto.touch.js"></script>
+<script src="../lib/zepto.unslider.js"></script>
+<script src="../lib/zepto.validate.js"></script>
+<script src="../lib/common.js"></script>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入-->
+<script src="template.js"></script>
+</html>

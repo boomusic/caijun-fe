@@ -1,0 +1,40 @@
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+#m-tab > a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  padding: 13px 0;
+  border-bottom: 1px solid transparent;
+}
+#m-tab > a > span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1em;
+}
+#m-tab > a:first-child > span {
+  border-right: 1px solid #ededed;
+}
+#m-tab > a.col-red {
+  border-bottom: 1px solid #e34c0b;
+}
+#m-login,
+#m-register {
+  padding: 10px 20px;
+}
+#form-group-register-captcha > a {
+  border-radius: 4px;
+  border: 1px solid #e34c0b;
+  height: 43px;
+  line-height: 43px;
+  padding: 0 0.5em;
+  width: 7em;
+  background-color: #ffffff;
+  text-align: center;
+}
+#form-group-register-captcha > .input-group {
+  margin-right: 135px;
+}
+#form-group-register-captcha > .input-group > input {
+  text-indent: 1em;
+}
