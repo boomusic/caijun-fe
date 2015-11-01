@@ -404,6 +404,21 @@ a {
     .col-white;
     .bg-red;
   }
+  &.btn-normal {
+    display: inline-block;
+    padding: .6em 1.2em;
+  }
+  &.btn-rect {
+    border-radius: 0;
+  }
+  &.btn-fixed-submit {
+    line-height: 44px;
+    padding: 0 25px;
+    border-radius: 0;
+    .fz-15;
+    .col-white;
+    .bg-red;
+  }
 }
 
 /* horizontal scroll module */
@@ -461,6 +476,34 @@ i.icon {
     background: url("img/icon-success.png") center center no-repeat;
     background-size: 100% 100%;
   }
+  &.icon-food-checkbox {
+    .round;
+    border: 1px solid @red;
+    width: 22px;
+    height: 22px;
+    &.checked {
+      background: url("img/food-checkbox.png") center center no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  &.icon-food-delete {
+    background: url("img/food-del.png") center center no-repeat;
+    width: 10px;
+    height: 10px;
+    background-size: 100% 100%;
+  }
+  &.icon-subtract {
+    background: url("img/subtract.png") center center no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+  }
+  &.icon-add {
+    background: url("img/add.png") center center no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+  }
 }
 
 i.icon-word {
@@ -502,6 +545,11 @@ i.icon-word {
     content: '限';
     color: @xian;
     border: 1px solid @xian;
+  }
+  &.x:after {
+    content: 'X';
+    color: @gray;
+    .fz-18;
   }
 }
 
@@ -617,16 +665,50 @@ i.icon-word {
         border-radius: 4px;
         background-color: rgba(0, 0, 0, .5);
         padding: 13px 0;
-        >.toast-icon-wrapper {
+        > .toast-icon-wrapper {
           padding: 17px;
           line-height: 30px;
           .text-center;
         }
-        >.toast-content {
+        > .toast-content {
           .text-center;
           line-height: 2em;
           .fz-15;
           .col-white;
+        }
+      }
+    }
+  }
+  &.overlay-confirm {
+    > .overlay-content-container > .overlay-content {
+      border-radius: 4px;
+      .bg-white;
+      width: 230px;
+      .fz-15;
+      > .overlay-confirm-content {
+        padding: 18px 36px 12px;
+        line-height: 1.5em;
+        .text-center;
+      }
+      > .overlay-confirm-btn {
+        border-top: 1px solid @bg_body;
+        .text-center;
+        line-height: 2.5em;
+        .col-red;
+        display: block;
+        >span {
+          display: inline-block;
+          width: 50%;
+          line-height: 2.5em;
+          vertical-align: top;
+          &:first-child {
+            border-right: 1px solid @bg_body;
+            margin-left: -1px;
+            .col-gray;
+          }
+          &:active {
+            background-color: #f0f0f0;
+          }
         }
       }
     }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../lib/common.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="cart.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 公共头开始 -->
+<div id="header">
+    <div class="pull-left">
+        <a class="return" href="javascript:_.go();"></a>
+        <a class="locate fz-18" href="javascript:location.reload(true);">北京</a>
+    </div>
+    <div class="text-center">
+        <a class="fz-18">购物车</a>
+    </div>
+</div>
+<!-- 公共头结束 -->
+<div class="module bg-body text-center force-hidden" id="m-empty">
+    <img src="empty-girl.png"/>
+
+    <div class="col-gray fz-15">您还没有添加商品哦，赶紧去逛逛吧</div>
+    <div class="text-center">
+        <a href="../home/home.html" class="btn btn-normal btn-red fz-15">去逛逛</a>
+    </div>
+</div>
+<div class="module" id="m-foods">
+    <form action="" method="post">
+        <ul class="foods bg-body">
+            <li data-id="{food_id}">
+                <a class="checkbox pull-left"><i class="icon icon-food-checkbox"></i></a>
+                <a href="#" class="img-wrapper pull-left"><img src="../home/img/this-week-food-1.png" alt=""/></a>
+                <a class="delete pull-right"><i class="icon icon-food-delete"></i></a>
+
+                <div class="content">
+                    <div class="title fz-16 text-overflow">腰果西芹炒百合</div>
+                    <div class="activity">
+                        <i class="icon-word miao"></i>
+                        <i class="icon-word tao"></i>
+                        <i class="icon-word te"></i>
+                        <i class="icon-word xian"></i>
+                        <i class="icon-word shou"></i>
+                    </div>
+                    <div class="prices">
+                        <span class="price fz-18 col-red">￥15&nbsp;&nbsp;</span>
+                        <span class="price fz-12 text-delete">￥29</span>
+                    </div>
+                </div>
+                <div class="food-num text-center">
+                    <i class="icon icon-subtract pull-left"></i>
+                    <input class="input-checked" type="hidden" name="{food_id}[checked]"/>
+                    <input class="input-unit-price" type="hidden" name="{food_id}[unit_price]" value="15"/>
+                    <input class="input-num" type="hidden" name="{food_id}[num]" value="4"/>
+                    <span class="col-red fz-15 food-num-val">4</span>
+                    <i class="icon icon-add pull-right"></i>
+                </div>
+            </li>
+        </ul>
+        <div class="submit bg-white">
+            <input type="submit" value="去结算" class="btn btn-fixed-submit pull-right"/>
+            <a class="check-all"><i class="icon icon-food-checkbox"></i></a>
+            <span class="fz-12 col-red">商品总价:&nbsp;&nbsp;</span>
+            <span class="fz-15 col-red">￥</span>
+            <span class="fz-15 col-red total-price">0</span>
+        </div>
+    </form>
+</div>
+<!-- 公共底部开始 -->
+<div id="footer">
+</div>
+<!-- 公共导航 -->
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="../home/home.html" class="home col-red">首页</a>
+        <a href="../" class="category">分类</a>
+        <a href="../cart/cart.html" class="cart"><span><span class="cart-num">12</span></span>购物车</a>
+        <a href="../login/login.html" class="mine">我的</a>
+    </div>
+</div>
+</body>
+<!-- 公共js库引入 -->
+<script src="../lib/zepto-1.1.6.js"></script>
+<script src="../lib/zepto.fx.js"></script>
+<script src="../lib/zepto.cookie.js"></script>
+<script src="../lib/zepto.data.js"></script>
+<script src="../lib/zepto.touch.js"></script>
+<script src="../lib/zepto.unslider.js"></script>
+<script src="../lib/common.js"></script>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入-->
+<script src="cart.js"></script>
+</html>

@@ -370,6 +370,21 @@ a {
   color: #ffffff;
   background-color: #e34c0b;
 }
+.btn.btn-normal {
+  display: inline-block;
+  padding: .6em 1.2em;
+}
+.btn.btn-rect {
+  border-radius: 0;
+}
+.btn.btn-fixed-submit {
+  line-height: 44px;
+  padding: 0 25px;
+  border-radius: 0;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #e34c0b;
+}
 /* horizontal scroll module */
 .horizontal-scroll {
   overflow-y: hidden;
@@ -427,6 +442,35 @@ i.icon.icon-success {
   background: url("img/icon-success.png") center center no-repeat;
   background-size: 100% 100%;
 }
+i.icon.icon-food-checkbox {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #e34c0b;
+  width: 22px;
+  height: 22px;
+}
+i.icon.icon-food-checkbox.checked {
+  background: url("img/food-checkbox.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+i.icon.icon-food-delete {
+  background: url("img/food-del.png") center center no-repeat;
+  width: 10px;
+  height: 10px;
+  background-size: 100% 100%;
+}
+i.icon.icon-subtract {
+  background: url("img/subtract.png") center center no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 100% 100%;
+}
+i.icon.icon-add {
+  background: url("img/add.png") center center no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 100% 100%;
+}
 i.icon-word {
   display: inline-block;
   vertical-align: middle;
@@ -469,6 +513,11 @@ i.icon-word.xian:after {
   content: '限';
   color: #4fc1e9;
   border: 1px solid #4fc1e9;
+}
+i.icon-word.x:after {
+  content: 'X';
+  color: #a0a0a0;
+  font-size: 18px;
 }
 /* overlay module, must use javascript for ios webkit bug */
 .overlay-container {
@@ -584,6 +633,38 @@ i.icon-word.xian:after {
   line-height: 2em;
   font-size: 15px;
   color: #ffffff;
+}
+.overlay-container.overlay-confirm > .overlay-content-container > .overlay-content {
+  border-radius: 4px;
+  background-color: #ffffff;
+  width: 230px;
+  font-size: 15px;
+}
+.overlay-container.overlay-confirm > .overlay-content-container > .overlay-content > .overlay-confirm-content {
+  padding: 18px 36px 12px;
+  line-height: 1.5em;
+  text-align: center;
+}
+.overlay-container.overlay-confirm > .overlay-content-container > .overlay-content > .overlay-confirm-btn {
+  border-top: 1px solid #ededed;
+  text-align: center;
+  line-height: 2.5em;
+  color: #e34c0b;
+  display: block;
+}
+.overlay-container.overlay-confirm > .overlay-content-container > .overlay-content > .overlay-confirm-btn > span {
+  display: inline-block;
+  width: 50%;
+  line-height: 2.5em;
+  vertical-align: top;
+}
+.overlay-container.overlay-confirm > .overlay-content-container > .overlay-content > .overlay-confirm-btn > span:first-child {
+  border-right: 1px solid #ededed;
+  margin-left: -1px;
+  color: #a0a0a0;
+}
+.overlay-container.overlay-confirm > .overlay-content-container > .overlay-content > .overlay-confirm-btn > span:active {
+  background-color: #f0f0f0;
 }
 /* nav bar module */
 #navbar {

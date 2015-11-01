@@ -1,0 +1,70 @@
+@import "../lib/base";
+
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+
+#m-empty {
+  padding-top: 50px;
+  > img {
+    width: 193/2px;
+    height: auto;
+  }
+  > .col-gray {
+    padding: 25px 0 15px;
+  }
+}
+
+#m-foods {
+  >form {
+    > .foods {
+      > li {
+        margin-bottom: 10px;
+        background-color: @white;
+        padding: 10px 0 10px 10px;
+        height: 70px;
+        .relative;
+        > .checkbox {
+          width: 32px;
+          height: 100%;
+          line-height: 70px;
+        }
+        > .delete {
+          > .icon {
+            margin: -3px 13px 0 0;
+          }
+        }
+        > .img-wrapper {
+          width: 100px;
+          height: 70px;
+        }
+        > .content {
+          padding-left: 142px;
+          > .activity {
+            padding: 8px 0;
+          }
+        }
+        >.food-num {
+          .absolute;
+          right: 5%;
+          line-height: 25px;
+          height: 25px;
+          bottom: 10px;
+          width: 70px;
+        }
+      }
+    }
+    >.submit {
+      position: fixed;
+      bottom: 51px;
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      >a, span {
+        line-height: 44px;
+        .inline-block;
+      }
+      >.check-all {
+        padding: 0 15px 0 12px;
+      }
+    }
+  }
+}
