@@ -1,0 +1,49 @@
+@import "../lib/base";
+
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+#m-head {
+  > .title {
+    line-height: 37px;
+    padding-left: 12px;
+    border-bottom: 1px solid @bg_body;
+  }
+  > .info > div {
+    line-height: 40px;
+    &.pull-left {
+      padding-left: 18px;
+      > span:not(:first-child) {
+        margin-left: 12px;
+      }
+    }
+    &.pull-right {
+      padding-right: 18px;
+      > i:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+#m-info {
+  > div {
+    .inline-block;
+    width: 33.3%;
+    padding: 12px 0;
+    > div {
+      border-left: 1px solid @red;
+      .text-center;
+      line-height: 15px;
+      > span {
+        .fz-12;
+        .inline-block;
+        line-height: 1em;
+        margin: 2.5px 0 0 8px;
+      }
+    }
+    &:first-child {
+      > div {
+        border-left: none;
+      }
+    }
+  }
+}

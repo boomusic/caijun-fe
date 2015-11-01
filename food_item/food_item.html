@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../lib/common.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="food_item.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 公共头开始 -->
+<div id="header">
+    <div class="pull-left">
+        <a class="return" href="javascript:_.go();"></a>
+        <a class="locate fz-18" href="javascript:location.reload(true);">北京</a>
+    </div>
+    <div class="pull-right">
+        <a class="share" href="javascript:"></a>
+    </div>
+    <div class="text-center">
+        <a class="fz-18">商品详情</a>
+    </div>
+</div>
+<!-- 公共头结束 -->
+<div class="module with-bottom" id="m-head">
+    <div class="img-wrapper"><img src="big-img.jpg"></div>
+    <div class="title fz-16">蚝油冬笋鸡片+豆豉鲮鱼油麦菜</div>
+    <div class="info clearfix">
+        <div class="pull-left">
+            <span class="fz-18 col-red">￥9.00</span>
+            <span class="fz-12 text-delete">￥18.00</span>
+        </div>
+        <div class="pull-right">
+            <i class="icon icon-heart"></i>
+            <i class="icon icon-comment"></i>
+        </div>
+    </div>
+</div>
+<div class="module with-bottom" id="m-info">
+    <div>
+        <div>
+            <i class="icon icon-weight"></i>
+            <span>1884g</span>
+        </div>
+    </div>
+    <div>
+        <div>
+            <i class="icon icon-time"></i>
+            <span>43min</span>
+        </div>
+    </div>
+    <div>
+        <div>
+            <i class="icon icon-energy"></i>
+            <span>50卡</span>
+        </div>
+    </div>
+</div>
+<div class="module" id="m-tab">
+    <a href="#m-intro" class="col-red">介绍</a>
+    <a href="#m-method">做法</a>
+    <a href="#m-comment">评价</a>
+</div>
+<div class="module with-bottom" id="m-intro">
+    <div class="title">菜品介绍</div>
+    <div>
+        <div>黑三剁的名字绝对是让人一听就忘不了的那种，味道更是一样。
+            具有浓郁云南地方风味的家常菜肴，非常适合佐酒下饭。
+            材料简单，操作简便，咸香微辣，爽口开胃。
+        </div>
+        <div>黑三剁的黑，主要指的是玫瑰大头菜，创始于明末清初，
+            是云南名特产品，还曾在1911年巴拿马国际博览会上拿过奖呢。
+        </div>
+    </div>
+</div>
+<div class="module with-bottom" id="m-method">
+    <div class="title">做法简介</div>
+    <div class="step img-wrapper"><img src="step-1.jpg"></div>
+    <div class="step img-wrapper"><img src="step-2.jpg"></div>
+    <div class="step img-wrapper"><img src="step-3.jpg"></div>
+</div>
+<div class="module" id="m-comment">
+    <div class="comment">
+        <div class="info clearfix">
+            <div class="img-wrapper pull-left"><img src="avatar.jpg"></div>
+            <div class="username pull-left">村里的姑娘</div>
+            <div class="pull-right">2015-10-12</div>
+        </div>
+        <div class="content">遇见对的人，自然会笑，吃了对的菜，自然会美。这是一道清润滋补的上佳菜品。西芹能镇静安神、排除肠毒。</div>
+    </div>
+    <div class="comment">
+        <div class="info clearfix">
+            <div class="img-wrapper pull-left"><img src="avatar.jpg"></div>
+            <div class="username pull-left">村里的姑娘</div>
+            <div class="pull-right">2015-10-12</div>
+        </div>
+        <div class="content">遇见对的人，自然会笑，吃了对的菜，自然会美。这是一道清润滋补的上佳菜品。西芹能镇静安神、排除肠毒。</div>
+    </div>
+    <div><a href="#">查看全部评论>></a></div>
+</div>
+<div class="module" id="m-add-cart">
+    <input type="button" value="加入购物车" class="btn btn-fixed-submit pull-right"/>
+
+    <div class="pull-left">
+        <i class="icon icon-subtract pull-left"></i>
+        <span class="col-red fz-15 food-num-val">4</span>
+        <i class="icon icon-add pull-right"></i>
+    </div>
+</div>
+</body>
+<!-- 公共js库引入 -->
+<script src="../lib/zepto-1.1.6.js"></script>
+<script src="../lib/zepto.fx.js"></script>
+<script src="../lib/zepto.cookie.js"></script>
+<script src="../lib/zepto.data.js"></script>
+<script src="../lib/zepto.touch.js"></script>
+<script src="../lib/zepto.unslider.js"></script>
+<script src="../lib/common.js"></script>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入-->
+<script src="food_item.js"></script>
+</html>

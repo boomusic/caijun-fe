@@ -94,6 +94,9 @@
 .bt-10 {
   padding-bottom: 10px;
 }
+.bdb-body {
+  border-bottom: 1px solid #ededed;
+}
 html,
 body,
 div,
@@ -249,25 +252,33 @@ a {
   line-height: 44px;
   vertical-align: top;
   height: 44px;
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 #header > div > a.return {
-  width: 20px;
-  background: url("img/return.png") left center no-repeat;
-  background-size: auto 20px;
+  background-image: url("img/return.png");
+  width: 12px;
+  background-size: 12px auto;
 }
 #header > div > a.search {
-  background: url("img/search.png") left center no-repeat;
-  width: 28px;
-  background-size: auto 22px;
+  background-image: url("img/search.png");
+  width: 20px;
+  background-size: 20px auto;
 }
 #header > div > a.message {
-  background: url("img/message.png") right center no-repeat;
-  width: 28px;
-  background-size: auto 22px;
+  background-image: url("img/message.png");
+  width: 20px;
+  background-size: 20px auto;
 }
 #header > div > a.message.has-new {
-  background: url("img/message-new.png") right center no-repeat;
-  background-size: auto 22px;
+  background-image: url("img/message-new.png");
+  width: 20px;
+  background-size: 20px auto;
+}
+#header > div > a.share {
+  background-image: url("img/icon-share.png");
+  width: 20px;
+  background-size: 20px auto;
 }
 #header > div > a.logo {
   background: url("img/logo.png") center center no-repeat;
@@ -278,6 +289,12 @@ a {
 #header > div.pull-right {
   position: relative;
   z-index: 1;
+}
+#header > div.pull-left > a:not(:first-child) {
+  margin-left: 10px;
+}
+#header > div.pull-right > a:not(:last-child) {
+  margin-right: 15px;
 }
 #header > div.text-center {
   position: absolute;
@@ -469,6 +486,36 @@ i.icon.icon-add {
   background: url("img/add.png") center center no-repeat;
   width: 25px;
   height: 25px;
+  background-size: 100% 100%;
+}
+i.icon.icon-heart {
+  background: url("img/icon-heart.png") center center no-repeat;
+  width: 18.5px;
+  height: 17.5px;
+  background-size: 100% 100%;
+}
+i.icon.icon-comment {
+  background: url("img/icon-comment.png") center center no-repeat;
+  width: 18.5px;
+  height: 17.5px;
+  background-size: 100% 100%;
+}
+i.icon.icon-weight {
+  background: url("img/icon-weight.png") center center no-repeat;
+  width: 15px;
+  height: 15px;
+  background-size: 100% 100%;
+}
+i.icon.icon-time {
+  background: url("img/icon-time.png") center center no-repeat;
+  width: 15px;
+  height: 15px;
+  background-size: 100% 100%;
+}
+i.icon.icon-energy {
+  background: url("img/icon-energy.png") center center no-repeat;
+  width: 15px;
+  height: 15px;
   background-size: 100% 100%;
 }
 i.icon-word {
