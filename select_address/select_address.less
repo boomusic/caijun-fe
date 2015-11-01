@@ -1,0 +1,64 @@
+@import "../lib/base";
+
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+
+#m-addresses {
+  >.address {
+    margin-bottom: 10px;
+    .bg-white;
+    >.content {
+      padding: 0 10px 5px;
+      border-bottom: 1px solid @bg_body;
+      .relative;
+      >.radio {
+        .absolute;
+        top: 50%;
+        margin-top: -10px;
+      }
+      >.info {
+        padding-left: 30px;
+        >.name {
+          .fz-15;
+          line-height: 32px;
+        }
+        >.phone {
+          .fz-15;
+          line-height: 32px;
+          padding-right: 20px;
+        }
+      }
+      >.detail {
+        .fz-14;
+        .col-gray;
+        padding-left: 30px;
+        line-height: 21px;
+      }
+    }
+    >.buttons {
+      >a {
+        .inline-block;
+        width: 50%;
+        .text-center;
+        .fz-16;
+        line-height: 44px;
+        >span {
+          .inline-block;
+          margin: 2px 0 0 8px;
+        }
+        &:first-child {
+          border-right: 1px solid @bg_body;
+        }
+        &:last-child {
+          margin-left: -1px;
+        }
+        &:active {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+
+#m-new-address {
+  padding: 10px;
+}

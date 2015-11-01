@@ -1,0 +1,58 @@
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+#m-addresses > .address {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+#m-addresses > .address > .content {
+  padding: 0 10px 5px;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+}
+#m-addresses > .address > .content > .radio {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+}
+#m-addresses > .address > .content > .info {
+  padding-left: 30px;
+}
+#m-addresses > .address > .content > .info > .name {
+  font-size: 15px;
+  line-height: 32px;
+}
+#m-addresses > .address > .content > .info > .phone {
+  font-size: 15px;
+  line-height: 32px;
+  padding-right: 20px;
+}
+#m-addresses > .address > .content > .detail {
+  font-size: 14px;
+  color: #a0a0a0;
+  padding-left: 30px;
+  line-height: 21px;
+}
+#m-addresses > .address > .buttons > a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 44px;
+}
+#m-addresses > .address > .buttons > a > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px 0 0 8px;
+}
+#m-addresses > .address > .buttons > a:first-child {
+  border-right: 1px solid #ededed;
+}
+#m-addresses > .address > .buttons > a:last-child {
+  margin-left: -1px;
+}
+#m-addresses > .address > .buttons > a:active {
+  background-color: #f0f0f0;
+}
+#m-new-address {
+  padding: 10px;
+}

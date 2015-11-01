@@ -8,3 +8,4 @@
 | activity_foods | 活动菜品 |
 | cart | 购物车 |
 | food_item | 商品详情页 |
+| select_address | 选择收货地址 |
