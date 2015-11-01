@@ -61,13 +61,13 @@
     </div>
 </div>
 <div class="module" id="m-tab">
-    <a href="#m-intro" class="col-red">介绍</a>
-    <a href="#m-method">做法</a>
-    <a href="#m-comment">评价</a>
+    <a href="#m-intro" class="col-red"><span>介绍</span></a>
+    <a href="#m-method"><span>做法</span></a>
+    <a href="#m-comment"><span>评价</span></a>
 </div>
 <div class="module with-bottom" id="m-intro">
     <div class="title">菜品介绍</div>
-    <div>
+    <div class="content">
         <div>黑三剁的名字绝对是让人一听就忘不了的那种，味道更是一样。
             具有浓郁云南地方风味的家常菜肴，非常适合佐酒下饭。
             材料简单，操作简便，咸香微辣，爽口开胃。
@@ -79,36 +79,43 @@
 </div>
 <div class="module with-bottom" id="m-method">
     <div class="title">做法简介</div>
-    <div class="step img-wrapper"><img src="step-1.jpg"></div>
-    <div class="step img-wrapper"><img src="step-2.jpg"></div>
-    <div class="step img-wrapper"><img src="step-3.jpg"></div>
-</div>
-<div class="module" id="m-comment">
-    <div class="comment">
-        <div class="info clearfix">
-            <div class="img-wrapper pull-left"><img src="avatar.jpg"></div>
-            <div class="username pull-left">村里的姑娘</div>
-            <div class="pull-right">2015-10-12</div>
-        </div>
-        <div class="content">遇见对的人，自然会笑，吃了对的菜，自然会美。这是一道清润滋补的上佳菜品。西芹能镇静安神、排除肠毒。</div>
+    <div class="content">
+        <div class="step img-wrapper"><img src="step-1.jpg"></div>
+        <div class="step img-wrapper"><img src="step-2.jpg"></div>
+        <div class="step img-wrapper"><img src="step-3.jpg"></div>
     </div>
-    <div class="comment">
-        <div class="info clearfix">
-            <div class="img-wrapper pull-left"><img src="avatar.jpg"></div>
-            <div class="username pull-left">村里的姑娘</div>
-            <div class="pull-right">2015-10-12</div>
-        </div>
-        <div class="content">遇见对的人，自然会笑，吃了对的菜，自然会美。这是一道清润滋补的上佳菜品。西芹能镇静安神、排除肠毒。</div>
-    </div>
-    <div><a href="#">查看全部评论>></a></div>
 </div>
-<div class="module" id="m-add-cart">
-    <input type="button" value="加入购物车" class="btn btn-fixed-submit pull-right"/>
+<div class="module with-bottom" id="m-comment">
+    <div class="title">菜品评价<span class="fz-12">(152条评价)</span></div>
+    <div class="content">
+        <div class="comment">
+            <div class="info clearfix">
+                <div class="img-wrapper pull-left"><img src="avatar.jpg"></div>
+                <div class="username pull-left">村里的姑娘</div>
+                <div class="pull-right">2015-10-12</div>
+            </div>
+            <div class="content">遇见对的人，自然会笑，吃了对的菜，自然会美。这是一道清润滋补的上佳菜品。西芹能镇静安神、排除肠毒。</div>
+        </div>
+        <div class="comment">
+            <div class="info clearfix">
+                <div class="img-wrapper pull-left"><img src="avatar.jpg"></div>
+                <div class="username pull-left">村里的姑娘</div>
+                <div class="pull-right">2015-10-12</div>
+            </div>
+            <div class="content">遇见对的人，自然会笑，吃了对的菜，自然会美。这是一道清润滋补的上佳菜品。西芹能镇静安神、排除肠毒。</div>
+        </div>
+    </div>
+    <div class="more"><a href="#">查看全部评论>></a></div>
+</div>
+<div class="module bg-body" id="m-add-cart" data-id="{food_id}">
+    <div class="add-cart bg-white">
+        <input type="button" value="加入购物车" class="btn btn-fixed-submit pull-right"/>
 
-    <div class="pull-left">
-        <i class="icon icon-subtract pull-left"></i>
-        <span class="col-red fz-15 food-num-val">4</span>
-        <i class="icon icon-add pull-right"></i>
+        <div class="pull-left">
+            <i class="icon icon-subtract"></i>
+            <span class="col-red fz-15 food-num-val">4</span>
+            <i class="icon icon-add"></i>
+        </div>
     </div>
 </div>
 </body>

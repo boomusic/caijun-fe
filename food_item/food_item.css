@@ -40,3 +40,109 @@
 #m-info > div:first-child > div {
   border-left: none;
 }
+#m-tab {
+  border-bottom: 1px solid #ededed;
+}
+#m-tab > a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 0;
+  width: 33.3%;
+  font-size: 16px;
+}
+#m-tab > a > span {
+  display: block;
+  text-align: center;
+  line-height: 1em;
+  border-left: 1px solid #a0a0a0;
+}
+#m-tab > a:first-child > span {
+  border-left: none;
+}
+#m-intro > .title {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+#m-intro > .content {
+  padding: 0 10px 4px;
+}
+#m-intro > .content > div {
+  font-size: 12px;
+  color: #a0a0a0;
+  line-height: 25px;
+}
+#m-method > .title {
+  font-size: 15px;
+  line-height: 33px;
+  text-align: center;
+  border-bottom: 1px solid #e34c0b;
+}
+#m-method > .content > .step:not(:last-child) {
+  border-bottom: 1px solid #ededed;
+}
+#m-comment > .title {
+  font-size: 15px;
+  line-height: 33px;
+  text-align: center;
+  border-bottom: 1px solid #e34c0b;
+}
+#m-comment > .content > .comment {
+  padding: 4px 10px 7px;
+}
+#m-comment > .content > .comment:not(:last-child) {
+  border-bottom: 1px solid #ededed;
+}
+#m-comment > .content > .comment > .info {
+  height: 40px;
+  padding: 6px 0;
+}
+#m-comment > .content > .comment > .info > .img-wrapper {
+  width: 40px;
+  height: 40px;
+}
+#m-comment > .content > .comment > .info > .username {
+  line-height: 40px;
+  padding-left: 9px;
+  font-size: 14px;
+}
+#m-comment > .content > .comment > .info > .pull-right {
+  font-size: 12px;
+  line-height: 40px;
+  padding-right: 2em;
+}
+#m-comment > .content > .comment > .content {
+  font-size: 12px;
+  line-height: 18px;
+}
+#m-comment > .more {
+  text-align: center;
+  font-size: 12px;
+  color: #e34c0b;
+  line-height: 32px;
+}
+#m-add-cart {
+  height: 44px;
+}
+#m-add-cart > .add-cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ededed;
+  height: 44px;
+}
+#m-add-cart > .add-cart > input {
+  padding: 0 15px;
+}
+#m-add-cart > .add-cart > .pull-left {
+  line-height: 44px;
+  padding-left: 10%;
+}
+#m-add-cart > .add-cart > .pull-left > span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 3px;
+  line-height: 25px;
+  padding: 0 6px;
+}

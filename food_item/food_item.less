@@ -47,3 +47,118 @@
     }
   }
 }
+
+#m-tab {
+  border-bottom: 1px solid @bg_body;
+  > a {
+    .inline-block;
+    padding: 10px 0;
+    width: 33.3%;
+    .fz-16;
+    > span {
+      .block;
+      .text-center;
+      line-height: 1em;
+      border-left: 1px solid @gray;
+    }
+    &:first-child > span {
+      border-left: none;
+    }
+  }
+}
+
+#m-intro {
+  > .title {
+    .fz-15;
+    line-height: 30px;
+    .text-center;
+  }
+  > .content {
+    padding: 0 10px 4px;
+    > div {
+      .fz-12;
+      .col-gray;
+      line-height: 25px;
+    }
+  }
+}
+
+#m-method {
+  > .title {
+    .fz-15;
+    line-height: 33px;
+    .text-center;
+    border-bottom: 1px solid @red;
+  }
+  > .content > .step:not(:last-child) {
+    border-bottom: 1px solid @bg_body;
+  }
+}
+
+#m-comment {
+  > .title {
+    .fz-15;
+    line-height: 33px;
+    .text-center;
+    border-bottom: 1px solid @red;
+  }
+  > .content > .comment {
+    padding: 4px 10px 7px;
+    &:not(:last-child) {
+      border-bottom: 1px solid @bg_body;
+    }
+    >.info {
+      height: 40px;
+      padding: 6px 0;
+      >.img-wrapper {
+        width: 40px;
+        height: 40px;
+      }
+      >.username {
+        line-height: 40px;
+        padding-left: 9px;
+        .fz-14;
+      }
+      >.pull-right {
+        .fz-12;
+        line-height: 40px;
+        padding-right: 2em;
+      }
+    }
+    >.content {
+      .fz-12;
+      line-height: 18px;
+    }
+  }
+  >.more {
+    .text-center;
+    .fz-12;
+    .col-red;
+    line-height: 32px;
+  }
+}
+
+#m-add-cart {
+  height: 44px;
+  >.add-cart {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid @bg_body;
+    height: 44px;
+    >input {
+      padding: 0 15px;
+    }
+    >.pull-left {
+      line-height: 44px;
+      padding-left: 10%;
+      >span {
+        .inline-block;
+        margin-top: 3px;
+        line-height: 25px;
+        padding: 0 6px;
+      }
+    }
+  }
+}

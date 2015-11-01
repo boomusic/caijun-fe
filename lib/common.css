@@ -229,6 +229,7 @@ a {
   overflow: hidden;
 }
 .img-wrapper > img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -395,7 +396,7 @@ a {
   border-radius: 0;
 }
 .btn.btn-fixed-submit {
-  line-height: 44px;
+  line-height: 45px;
   padding: 0 25px;
   border-radius: 0;
   font-size: 15px;
