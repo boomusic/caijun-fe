@@ -126,3 +126,36 @@
 - `forceHide` *`Zepto`*
 
 强制隐藏, 通过添加类`force-hidden`
+
+- `validate` *`boolean|map[string][]string`*
+
+表单验证, 使用方法
+
+1. 在需要添加验证的输入控件上添加`data-validate`标签, 内容格式为
+`validator1:param1,param2:msg;validator2::msg```
+2. 在输入控件或者其父类元素上执行本函数, 如果符合要求, 则返回`true`, 否则 
+返回`map[string][]string`, 其`key`为输入控件的`name`或`id`或`index`
+
+例子:
+
+DOM
+```html
+<form>
+    <input type="text" name="username" data-validate="length:6:用户名过短"/>
+    <input type="number" name="phone" data-validate="phone"/>
+</form>
+```
+Javascript
+```js
+var $form = $('form');
+var error = $form.validate();
+if(error === true) {
+    alert('no problem');
+} else {
+    alert(error);
+}
+```
+
+现在支持的`validator`有`phone`(手机号), `length(min, max)`(长度限制), `pattern(options)`(模式匹配)
+
+可以通过调用`$.validation.register(name, validator, msg, force)方法来注册新的验证函数
