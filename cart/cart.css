@@ -42,19 +42,23 @@
   bottom: 10px;
   width: 70px;
 }
-#m-foods > form > .submit {
+#m-foods > form > .submit-wrapper {
+  height: 45px;
+}
+#m-foods > form > .submit-wrapper > .submit {
+  border-top: 1px solid #ededed;
   position: fixed;
   bottom: 51px;
   width: 100%;
   height: 44px;
   line-height: 44px;
 }
-#m-foods > form > .submit > a,
-#m-foods > form > .submit span {
+#m-foods > form > .submit-wrapper > .submit > a,
+#m-foods > form > .submit-wrapper > .submit span {
   line-height: 44px;
   display: inline-block;
   vertical-align: middle;
 }
-#m-foods > form > .submit > .check-all {
+#m-foods > form > .submit-wrapper > .submit > .check-all {
   padding: 0 15px 0 12px;
 }

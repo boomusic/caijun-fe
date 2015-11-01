@@ -14,7 +14,7 @@
 }
 
 #m-foods {
-  >form {
+  > form {
     > .foods {
       > li {
         margin-bottom: 10px;
@@ -42,7 +42,7 @@
             padding: 8px 0;
           }
         }
-        >.food-num {
+        > .food-num {
           .absolute;
           right: 5%;
           line-height: 25px;
@@ -52,18 +52,22 @@
         }
       }
     }
-    >.submit {
-      position: fixed;
-      bottom: 51px;
-      width: 100%;
-      height: 44px;
-      line-height: 44px;
-      >a, span {
+    > .submit-wrapper {
+      height: 45px;
+      > .submit {
+        border-top: 1px solid @bg_body;
+        position: fixed;
+        bottom: 51px;
+        width: 100%;
+        height: 44px;
         line-height: 44px;
-        .inline-block;
-      }
-      >.check-all {
-        padding: 0 15px 0 12px;
+        > a, span {
+          line-height: 44px;
+          .inline-block;
+        }
+        > .check-all {
+          padding: 0 15px 0 12px;
+        }
       }
     }
   }
