@@ -50,7 +50,7 @@ $(function () {
         }
         $.post('', $mLogin.find('form').serialize(), function () {
             _.alert('登陆失败');
-            _.alert('密码输入有错误, 请重新输入', function() {
+            _.alert('密码输入有错误, 请重新输入', function () {
                 _.go(_.location.search('redirect', '../home/home.html'));
             });
         });
@@ -69,19 +69,12 @@ $(function () {
                 if (!captcha) {
                     _.alert('获取验证码失败');
                 } else {
-                    var max = +new Date + 3e3,
-                        remain;
+                    var max = +new Date + 3e3;
                     captchaStatus = 1;
-                    (function () {
-                        remain = max - (+new Date);
-                        if (remain < 0) {
-                            captchaStatus = 0;
-                            $this.html('重新获取验证码');
-                        } else {
-                            $this.html(Math.ceil(remain / 1000) + 's后重新获取');
-                            setTimeout(arguments.callee, 999)
-                        }
-                    })();
+                    $this.countDown(max, 'ss\\s后重新获取', 900, function () {
+                        $this.html('重新获取验证码');
+                        captchaStatus = 0;
+                    })
                 }
             })
         }
@@ -103,7 +96,7 @@ $(function () {
         $.post('', $mRegister.find('form').serialize(), function () {
             _.alert('手机号码已注册, 请登录或找回密码');
             _.alert('注册失败');
-            _.toast('恭喜您, 注册成功', 3000, 'icon-success');
+            _.toast('恭喜您, 注册成功', 3e3, 'icon-success');
         });
     });
 });
