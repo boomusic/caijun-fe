@@ -1,0 +1,41 @@
+@import "../lib/base";
+
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+
+#m-status {
+  >div {
+    line-height: 44px;
+  }
+}
+#m-foods {
+  > .foods {
+    > li {
+      margin-bottom: 10px;
+      background-color: @white;
+      padding: 10px 0 10px 10px;
+      height: 100px;
+      .relative;
+      > .img-wrapper {
+        width: 100px;
+        height: 100px;
+      }
+      > .content {
+        padding-left: 110px;
+        > .title, > .intro {
+          line-height: 1.5em;
+        }
+        > .activity {
+          padding: 7px 0;
+        }
+        .add-cart {
+          .absolute;
+          right: 56/7.5%;
+          top: 68px;
+        }
+        > .prices {
+          padding: 6px 0;
+        }
+      }
+    }
+  }
+}

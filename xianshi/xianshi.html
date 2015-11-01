@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../lib/common.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="xianshi.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 公共头开始 -->
+<div id="header">
+    <div class="pull-left">
+        <a class="return" href="javascript:_.go();"></a>
+        <a class="locate fz-18" href="javascript:location.reload(true);">北京</a>
+    </div>
+    <div class="text-center">
+        <a class="fz-18">限时抢购</a>
+    </div>
+</div>
+<!-- 公共头结束 -->
+<div class="module" id="m-status">
+    <div class="text-center fz-15 bg-red col-white" data-start-time="1447304515182" data-end-time="1546344515182"></div>
+</div>
+<div class="module" id="m-foods">
+    <ul class="foods bg-body">
+        <li data-remain="250">
+            <a href="#" class="img-wrapper pull-left"><img src="../home/img/this-week-food-1.png" alt=""/></a>
+
+            <div class="content">
+                <div class="title fz-16 text-overflow">腰果西芹炒百合</div>
+                <div class="activity">
+                    <i class="icon-word miao"></i>
+                    <i class="icon-word tao"></i>
+                    <i class="icon-word te"></i>
+                    <i class="icon-word xian"></i>
+                    <i class="icon-word shou"></i>
+                </div>
+                <div class="prices">
+                    <span class="price fz-18 col-red">￥15&nbsp;&nbsp;</span>
+                    <span class="price fz-12 text-delete">￥29</span>
+                </div>
+                <div class="col-red  fz-12">剩余250份</div>
+                <div class="add-cart"><span data-id="100" class="btn-img round btn-add-cart in-list"></span></div>
+            </div>
+        </li>
+        <li data-remain="250">
+            <a href="#" class="img-wrapper pull-left"><img src="../home/img/this-week-food-1.png" alt=""/></a>
+
+            <div class="content">
+                <div class="title fz-16 text-overflow">腰果西芹炒百合</div>
+                <div class="activity">
+                    <i class="icon-word miao"></i>
+                    <i class="icon-word tao"></i>
+                    <i class="icon-word te"></i>
+                    <i class="icon-word xian"></i>
+                    <i class="icon-word shou"></i>
+                </div>
+                <div class="prices">
+                    <span class="price fz-18 col-red">￥15&nbsp;&nbsp;</span>
+                    <span class="price fz-12 text-delete">￥29</span>
+                </div>
+                <div class="col-red fz-12">仅剩250份</div>
+                <div class="add-cart"><span data-id="100" class="btn-img round btn-add-cart in-list"></span></div>
+            </div>
+        </li>
+        <li data-remain="0">
+            <a href="#" class="img-wrapper pull-left"><img src="../home/img/this-week-food-1.png" alt=""/></a>
+
+            <div class="content">
+                <div class="title fz-16 text-overflow">腰果西芹炒百合</div>
+                <div class="activity">
+                    <i class="icon-word miao"></i>
+                    <i class="icon-word tao"></i>
+                    <i class="icon-word te"></i>
+                    <i class="icon-word xian"></i>
+                    <i class="icon-word shou"></i>
+                </div>
+                <div class="prices">
+                    <span class="price fz-18 col-red">￥15&nbsp;&nbsp;</span>
+                    <span class="price fz-12 text-delete">￥29</span>
+                </div>
+                <div class="col-red  fz-12">已售光</div>
+                <div class="add-cart"><span data-id="100" class="btn-img round btn-add-cart in-list"></span></div>
+            </div>
+        </li>
+        <li data-remain="1">
+            <a href="#" class="img-wrapper pull-left"><img src="../home/img/this-week-food-1.png" alt=""/></a>
+
+            <div class="content">
+                <div class="title fz-16 text-overflow">腰果西芹炒百合</div>
+                <div class="activity">
+                    <i class="icon-word miao"></i>
+                    <i class="icon-word tao"></i>
+                    <i class="icon-word te"></i>
+                    <i class="icon-word xian"></i>
+                    <i class="icon-word shou"></i>
+                </div>
+                <div class="prices">
+                    <span class="price fz-18 col-red">￥15&nbsp;&nbsp;</span>
+                    <span class="price fz-12 text-delete">￥29</span>
+                </div>
+                <div class="col-red  fz-12">库存紧张</div>
+                <div class="add-cart"><span data-id="100" class="btn-img round btn-add-cart in-list"></span></div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- 公共底部开始 -->
+<div id="footer">
+</div>
+<!-- 公共导航 -->
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="../home/home.html" class="home col-red">首页</a>
+        <a href="../" class="category">分类</a>
+        <a href="../cart/cart.html" class="cart"><span><span class="cart-num">12</span></span>购物车</a>
+        <a href="../login/login.html" class="mine">我的</a>
+    </div>
+</div>
+</body>
+<!-- 公共js库引入 -->
+<script src="../lib/zepto-1.1.6.js"></script>
+<script src="../lib/zepto.fx.js"></script>
+<script src="../lib/zepto.cookie.js"></script>
+<script src="../lib/zepto.data.js"></script>
+<script src="../lib/zepto.touch.js"></script>
+<script src="../lib/zepto.unslider.js"></script>
+<script src="../lib/common.js"></script>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入-->
+<script src="xianshi.js"></script>
+</html>

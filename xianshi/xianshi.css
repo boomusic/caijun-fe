@@ -1,0 +1,33 @@
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+#m-status > div {
+  line-height: 44px;
+}
+#m-foods > .foods > li {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  padding: 10px 0 10px 10px;
+  height: 100px;
+  position: relative;
+}
+#m-foods > .foods > li > .img-wrapper {
+  width: 100px;
+  height: 100px;
+}
+#m-foods > .foods > li > .content {
+  padding-left: 110px;
+}
+#m-foods > .foods > li > .content > .title,
+#m-foods > .foods > li > .content > .intro {
+  line-height: 1.5em;
+}
+#m-foods > .foods > li > .content > .activity {
+  padding: 7px 0;
+}
+#m-foods > .foods > li > .content .add-cart {
+  position: absolute;
+  right: 7.46666667%;
+  top: 68px;
+}
+#m-foods > .foods > li > .content > .prices {
+  padding: 6px 0;
+}
