@@ -1,0 +1,104 @@
+@import "../lib/base";
+
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+
+#m-week {
+  > .filter {
+    border-bottom: 1px solid @bg_body;
+    height: 16px;
+    line-height: 16px;
+    padding: 10px 0;
+    > div {
+      width: 33.3%;
+      > div {
+        border-left: 1px solid @red;
+        > span {
+          line-height: 1em;
+        }
+      }
+      &:first-child > div {
+        border-left: none;
+      }
+    }
+  }
+  > .foods {
+    > li {
+      margin-bottom: 10px;
+      background-color: @white;
+      padding: 10px 0 10px 10px;
+      height: 100px;
+      .relative;
+      > .img-wrapper {
+        width: 100px;
+        height: 100px;
+      }
+      > .content {
+        padding-left: 110px;
+        > .title, > .intro {
+          line-height: 1.5em;
+        }
+        > .activity {
+          padding: 7px 0;
+        }
+        .add-cart {
+          .absolute;
+          right: 56/7.5%;
+          top: 68px;
+        }
+        > .prices {
+          padding-top: 6px;
+        }
+      }
+    }
+  }
+}
+
+#food-filter-overlay {
+  .overlay-content {
+    width: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    > .filter {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      flex-basis: 100%;
+      -webkit-flex-basis: 100%;
+      padding: 10px 0;
+      border-top: 1px solid #aaa;
+      border-bottom: 1px solid #aaa;
+      > div {
+        -moz-box-flex: 1; /* Firefox */
+        -webkit-box-flex: 1; /* Safari 和 Chrome */
+        box-flex: 1;
+        flex-basis: 100%;
+        -webkit-flex-basis: 100%;
+        border-left: 1px solid @aaa;
+        > div > span {
+          line-height: 1em;
+        }
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+    > .list-wrapper {
+      padding: 10px 42px;
+      > div {
+        > a {
+          padding: 7px 0;
+          .fz-14;
+          .block;
+          > i {
+            .round;
+            .col-white;
+            .text-center;
+            .with-padding;
+            .inline-block;
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+#m-week > .filter {
+  border-bottom: 1px solid #ededed;
+  height: 16px;
+  line-height: 16px;
+  padding: 10px 0;
+}
+#m-week > .filter > div {
+  width: 33.3%;
+}
+#m-week > .filter > div > div {
+  border-left: 1px solid #e34c0b;
+}
+#m-week > .filter > div > div > span {
+  line-height: 1em;
+}
+#m-week > .filter > div:first-child > div {
+  border-left: none;
+}
+#m-week > .foods > li {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  padding: 10px 0 10px 10px;
+  height: 100px;
+  position: relative;
+}
+#m-week > .foods > li > .img-wrapper {
+  width: 100px;
+  height: 100px;
+}
+#m-week > .foods > li > .content {
+  padding-left: 110px;
+}
+#m-week > .foods > li > .content > .title,
+#m-week > .foods > li > .content > .intro {
+  line-height: 1.5em;
+}
+#m-week > .foods > li > .content > .activity {
+  padding: 7px 0;
+}
+#m-week > .foods > li > .content .add-cart {
+  position: absolute;
+  right: 7.46666667%;
+  top: 68px;
+}
+#m-week > .foods > li > .content > .prices {
+  padding-top: 6px;
+}
+#food-filter-overlay .overlay-content {
+  width: 100%;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+#food-filter-overlay .overlay-content > .filter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+#food-filter-overlay .overlay-content > .filter > div {
+  -moz-box-flex: 1;
+  /* Firefox */
+  -webkit-box-flex: 1;
+  /* Safari 和 Chrome */
+  box-flex: 1;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+  border-left: 1px solid #aaaaaa;
+}
+#food-filter-overlay .overlay-content > .filter > div > div > span {
+  line-height: 1em;
+}
+#food-filter-overlay .overlay-content > .filter > div:first-child {
+  border-left: none;
+}
+#food-filter-overlay .overlay-content > .list-wrapper {
+  padding: 10px 42px;
+}
+#food-filter-overlay .overlay-content > .list-wrapper > div > a {
+  padding: 7px 0;
+  font-size: 14px;
+  display: block;
+}
+#food-filter-overlay .overlay-content > .list-wrapper > div > a > i {
+  border-radius: 50%;
+  overflow: hidden;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 0.25em;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5em;
+}
