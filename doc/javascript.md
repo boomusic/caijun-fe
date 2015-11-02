@@ -159,3 +159,23 @@ if(error === true) {
 现在支持的`validator`有`phone`(手机号), `length(min, max)`(长度限制), `pattern(options)`(模式匹配)
 
 可以通过调用`$.validation.register(name, validator, msg, force)方法来注册新的验证函数
+
+- `unslider` *`Zepto`*
+
+图片轮播组件, 使用方法参考<https://github.com/acrazing/zepto.unslider>
+
+- `cookie` *`string|null`*
+
+`cookie`操作组件, 使用方法:
+
+```js
+// 获取cookie
+$.cookie(cookieName)
+
+// 设置cookie
+$.cookie(cookieName, value, options)
+```
+
+- `data`, `animate`, `touch`
+
+`zepto`的标准组件, 使用方法请看官方文档, 可以按需引入
