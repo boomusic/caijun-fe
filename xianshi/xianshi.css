@@ -16,18 +16,17 @@
 #m-foods > .foods > li > .content {
   padding-left: 110px;
 }
-#m-foods > .foods > li > .content > .title,
-#m-foods > .foods > li > .content > .intro {
+#m-foods > .foods > li > .content > .title {
   line-height: 1.5em;
 }
 #m-foods > .foods > li > .content > .activity {
   padding: 7px 0;
 }
+#m-foods > .foods > li > .content > .prices {
+  padding-bottom: 2px;
+}
 #m-foods > .foods > li > .content .add-cart {
   position: absolute;
   right: 7.46666667%;
   top: 68px;
-}
-#m-foods > .foods > li > .content > .prices {
-  padding: 6px 0;
 }

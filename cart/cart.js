@@ -33,8 +33,8 @@ $(function () {
         }
     }
 
-    $mFoods.on(_.touchEnd, '.checkbox>i', function () {
-        var $this = $(this).parent(),
+    $mFoods.on(_.touchEnd, '.checkbox', function () {
+        var $this = $(this),
             $food = $this.parent(),
             $checkbox = $this.find('i'),
             price,
@@ -67,8 +67,8 @@ $(function () {
         $food.find('.input-num').val(foodNum);
         $foodNum.html(foodNum);
         checked && changePrice(unitPrice);
-    }).on(_.touchEnd, '.delete>i', function () {
-        var $this = $(this).parent(),
+    }).on(_.touchEnd, '.delete', function () {
+        var $this = $(this),
             $food = $this.closest('li'),
             foodId = $food.data('id'),
             $foodNum = $food.find('.food-num-val'),
@@ -86,9 +86,10 @@ $(function () {
                 }
             })
         })
-    }).on(_.touchEnd, '.check-all>i', function () {
+    }).on(_.touchEnd, '.check-all', function () {
         var $this = $(this),
-            checked = $this.hasClass('checked');
+            $i = $this.find('i'),
+            checked = $i.hasClass('checked');
         if (checked) {
             $mFoods.find('.checkbox>i.checked').trigger('touchend');
         } else {
