@@ -764,27 +764,27 @@ i.icon-word.x:after {
   position: relative;
 }
 #navbar > div > a.home {
-  background: url("img/home.png") center 3px no-repeat;
+  background: url("img/tab-home.png") center 3px no-repeat;
   background-size: 25px 25px;
 }
 #navbar > div > a.home.col-red,
 #navbar > div > a.home:active {
   color: #e34c0b;
-  background: url("img/home.png") center 3px no-repeat;
+  background: url("img/tab-home-active.png") center 3px no-repeat;
   background-size: 25px 25px;
 }
 #navbar > div > a.category {
-  background: url("img/category.png") center 3px no-repeat;
+  background: url("img/tab-category.png") center 3px no-repeat;
   background-size: 25px 25px;
 }
 #navbar > div > a.category.col-red,
 #navbar > div > a.category:active {
   color: #e34c0b;
-  background: url("img/category.png") center 3px no-repeat;
+  background: url("img/tab-category-active.png") center 3px no-repeat;
   background-size: 25px 25px;
 }
 #navbar > div > a.cart {
-  background: url("img/cart.png") center 3px no-repeat;
+  background: url("img/tab-cart.png") center 3px no-repeat;
   background-size: 25px 25px;
 }
 #navbar > div > a.cart > span {
@@ -813,17 +813,17 @@ i.icon-word.x:after {
 #navbar > div > a.cart.col-red,
 #navbar > div > a.cart:active {
   color: #e34c0b;
-  background: url("img/cart.png") center 3px no-repeat;
+  background: url("img/tab-cart-active.png") center 3px no-repeat;
   background-size: 25px 25px;
 }
 #navbar > div > a.mine {
-  background: url("img/mine.png") center 3px no-repeat;
+  background: url("img/tab-mine.png") center 3px no-repeat;
   background-size: 25px 25px;
 }
 #navbar > div > a.mine.col-red,
 #navbar > div > a.mine:active {
   color: #e34c0b;
-  background: url("img/mine.png") center 3px no-repeat;
+  background: url("img/tab-mine-active.png") center 3px no-repeat;
   background-size: 25px 25px;
 }
 /* animate module */
