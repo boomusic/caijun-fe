@@ -1,3 +1,4 @@
+/* font size module */
 .fz-10 {
   font-size: 10px;
 }
@@ -34,6 +35,7 @@
 .fz-20 {
   font-size: 20px;
 }
+/* color module */
 .col-red {
   color: #e34c0b;
 }
@@ -58,6 +60,7 @@
 .col-shou {
   color: #ffce54;
 }
+/* background module */
 .bg-red {
   background-color: #e34c0b;
 }
@@ -85,6 +88,7 @@
 .bg-body {
   background-color: #ededed;
 }
+/* others module */
 .bold {
   font-weight: bold;
 }
@@ -94,9 +98,38 @@
 .bt-10 {
   padding-bottom: 10px;
 }
+.force-hidden {
+  display: none !important;
+}
+.with-before:before {
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  margin-right: 4px;
+  width: 4px;
+  min-width: 4px;
+  height: 100%;
+  min-height: 100%;
+}
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+.with-padding {
+  padding: 0 0.25em;
+}
+.block {
+  display: block;
+}
+.round {
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* border module */
 .bdb-body {
   border-bottom: 1px solid #ededed;
 }
+/* base define module */
 html,
 body,
 div,
@@ -130,9 +163,6 @@ li.hidden,
 input.hidden {
   display: none;
 }
-.force-hidden {
-  display: none !important;
-}
 ul,
 ol,
 li {
@@ -154,6 +184,7 @@ body > .module.bg-body {
 a {
   color: inherit;
 }
+/* position module */
 .clearfix {
   display: block;
   zoom: 1;
@@ -182,6 +213,7 @@ a {
 .pull-left {
   float: left;
 }
+/* text module */
 .text-left {
   text-align: left;
 }
@@ -202,25 +234,8 @@ a {
 .text-underline {
   text-decoration: underline;
 }
-.with-before:before {
-  display: inline-block;
-  vertical-align: top;
-  content: "";
-  margin-right: 4px;
-  width: 4px;
-  min-width: 4px;
-  height: 100%;
-  min-height: 100%;
-}
-.inline-block {
-  display: inline-block;
-  vertical-align: middle;
-}
-.with-padding {
-  padding: 0 0.25em;
-}
-.block {
-  display: block;
+.text-indent-2 {
+  text-indent: 2em;
 }
 /* img module */
 .img-wrapper {
@@ -232,10 +247,6 @@ a {
   display: block;
   width: 100%;
   height: auto;
-}
-.round {
-  border-radius: 50%;
-  overflow: hidden;
 }
 /* header module */
 #header {

@@ -1,5 +1,6 @@
 @import "base";
 
+/* font size module */
 .fz-10 {
   .fz(10px);
 }
@@ -48,6 +49,7 @@
   .fz(20px);
 }
 
+/* color module */
 .col-red {
   color: @red;
 }
@@ -80,6 +82,7 @@
   color: @shou;
 }
 
+/* background module */
 .bg-red {
   background-color: @red;
 }
@@ -116,6 +119,7 @@
   background-color: @bg_body;
 }
 
+/* others module */
 .bold {
   font-weight: bold;
 }
@@ -128,10 +132,45 @@
   padding-bottom: 10px;
 }
 
+.force-hidden {
+  display: none !important;
+}
+
+.with-before:before {
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  margin-right: 4px;
+  width: 4px;
+  min-width: 4px;
+  height: 100%;
+  min-height: 100%;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.with-padding {
+  .with-padding();
+}
+
+.block {
+  display: block;
+}
+
+.round {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* border module */
 .bdb-body {
   border-bottom: 1px solid @bg_body;
 }
 
+/* base define module */
 html, body, div, a, img, span, i, ul, ol, li, input {
   margin: 0;
   padding: 0;
@@ -144,10 +183,6 @@ html, body, div, a, img, span, i, ul, ol, li, input {
     display: none;
   }
   -webkit-appearance: none;
-}
-
-.force-hidden {
-  display: none !important;
 }
 
 ul, ol, li {
@@ -172,6 +207,7 @@ a {
   color: inherit;
 }
 
+/* position module */
 .clearfix {
   display: block;
   zoom: 1;
@@ -205,6 +241,7 @@ a {
   float: left;
 }
 
+/* text module */
 .text-left {
   text-align: left;
 }
@@ -231,28 +268,8 @@ a {
   text-decoration: underline;
 }
 
-.with-before:before {
-  display: inline-block;
-  vertical-align: top;
-  content: "";
-  margin-right: 4px;
-  width: 4px;
-  min-width: 4px;
-  height: 100%;
-  min-height: 100%;
-}
-
-.inline-block {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.with-padding {
-  .with-padding();
-}
-
-.block {
-  display: block;
+.text-indent-2 {
+  text-indent: 2em;
 }
 
 /* img module */
@@ -264,11 +281,6 @@ a {
     width: 100%;
     height: auto;
   }
-}
-
-.round {
-  border-radius: 50%;
-  overflow: hidden;
 }
 
 /* header module */
