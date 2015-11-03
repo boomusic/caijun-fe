@@ -74,3 +74,5 @@
 | user, password | 否 | input-group-addon | 表单元素icon |
 | | | | |
 | animated.xxx | 否 | \- | 动画模块, 参考animate.css, 动画按需要添加, 公共库只有pulse和fadeOut, fadeIn, zoomOutUp |
+| | | | |
+| text-indent-2 | 是 | \- | 首行缩进2em |

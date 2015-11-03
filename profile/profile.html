@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>青年菜君</title>
+    <!-- 公共样式库 -->
+    <link href="../lib/common.css" rel="stylesheet"/>
+    <!-- 页面自定义样式 -->
+    <link href="profile.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- 公共头开始 -->
+<div id="header">
+    <div class="pull-left">
+        <a class="return" href="javascript:_.go();"></a>
+        <a class="locate fz-18" href="javascript:location.reload(true);">北京</a>
+    </div>
+    <div class="pull-right">
+        <a class="setting" href="javascript:"></a>
+    </div>
+    <div class="text-center">
+        <a class="fz-18" href="javascript:">个人资料</a>
+    </div>
+</div>
+<!-- 公共头结束 -->
+<div class="module" id="m-head">
+    <div class="img-wrapper head-bg"><img src="img/header-bg.jpg"></div>
+    <div class="content">
+        <div class="text-center avatar"><img src="../food_item/img/avatar.jpg" class="round"></div>
+        <div class="text-center phone col-white fz-15">13615881696</div>
+    </div>
+</div>
+<div class="module" id="m-profile">
+    <div class="nickname">
+        <div>昵称：</div>
+        <div>cyc</div>
+    </div>
+    <div class="gender">
+        <div>性别：</div>
+        <div class="content">
+            <div class="radio">
+                <i class="icon icon-food-checkbox gray"></i>
+                <span>先生</span>
+            </div>
+            <div class="radio">
+                <i class="icon icon-food-checkbox gray"></i>
+                <span>女士</span>
+            </div>
+        </div>
+    </div>
+    <div class="age">
+        <div class="pull-right"><i class="icon icon-forward"></i></div>
+        <div>年龄：</div>
+        <div class="col-gray">可不填</div>
+    </div>
+</div>
+<!-- 公共底部开始 -->
+<div id="footer">
+</div>
+<!-- 公共导航 -->
+<div id="navbar">
+    <div class="text-center bg-white">
+        <a href="../home/home.html" class="home col-red">首页</a>
+        <a href="../" class="category">分类</a>
+        <a href="../cart/cart.html" class="cart"><span><span class="cart-num">12</span></span>购物车</a>
+        <a href="../login/login.html" class="mine">我的</a>
+    </div>
+</div>
+</body>
+<!-- 公共js库引入 -->
+<script src="../lib/zepto-1.1.6.js"></script>
+<script src="../lib/zepto.fx.js"></script>
+<script src="../lib/zepto.cookie.js"></script>
+<script src="../lib/zepto.data.js"></script>
+<script src="../lib/zepto.touch.js"></script>
+<script src="../lib/zepto.unslider.js"></script>
+<script src="../lib/common.js"></script>
+<!-- 公共底部结束 -->
+
+<!-- 页面js引入-->
+<script src="profile.js"></script>
+</html>

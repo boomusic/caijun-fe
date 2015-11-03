@@ -1,0 +1,50 @@
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+#m-head {
+  position: relative;
+  padding-top: 27.6%;
+}
+#m-head > .head-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+#m-head > .content {
+  position: absolute;
+  top: 50%;
+  margin-top: -33px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+#m-head > .content > .avatar {
+  padding-bottom: 10px;
+}
+#m-head > .content > .avatar > img {
+  width: 40px;
+  height: 40px;
+}
+#m-profile > div:not(:first-child) {
+  border-top: 1px solid #ededed;
+}
+#m-profile > div {
+  padding: 0 10px;
+}
+#m-profile > div > div {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 44px;
+  font-size: 15px;
+}
+#m-profile > div.gender > div:last-child > div {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 44px;
+  width: 100px;
+}
+#m-profile > div.gender > div:last-child > div > i {
+  margin-bottom: 2px;
+  width: 20px;
+  height: 20px;
+}

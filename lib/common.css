@@ -292,6 +292,11 @@ a {
   width: 20px;
   background-size: 20px auto;
 }
+#header > div > a.setting {
+  background-image: url("img/head-setting.png");
+  width: 20px;
+  background-size: 100% auto;
+}
 #header > div > a.logo {
   background: url("img/logo.png") center center no-repeat;
   width: 100px;
@@ -482,6 +487,11 @@ i.icon.icon-food-checkbox.checked {
   background: url("img/food-checkbox.png") center center no-repeat;
   background-size: 100% 100%;
 }
+i.icon.icon-food-checkbox.gray {
+  border-color: #ededed;
+  background: url("img/icon-food-checkbox-gray.jpg") center center no-repeat;
+  background-size: 100% 100%;
+}
 i.icon.icon-food-delete {
   background: url("img/food-del.png") center center no-repeat;
   width: 10px;
@@ -546,6 +556,12 @@ i.icon.icon-delete {
   background: url("img/icon-delete.png") center center no-repeat;
   width: 17.5px;
   height: 17.5px;
+  background-size: 100% 100%;
+}
+i.icon.icon-forward {
+  background: url("img/icon-forward.png") center center no-repeat;
+  width: 8px;
+  height: 14px;
   background-size: 100% 100%;
 }
 i.icon-word {

@@ -1,0 +1,56 @@
+@import "../lib/base";
+
+/* 页面 less 文件, 如果不用less就直接编辑相应的css文件 */
+
+#m-head {
+  .relative;
+  padding-top: 207/7.5%;
+  > .head-bg {
+    .absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  > .content {
+    .absolute;
+    top: 50%;
+    margin-top: -33px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    > .avatar {
+      padding-bottom: 10px;
+      > img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+#m-profile {
+  >div:not(:first-child) {
+    border-top: 1px solid @bg_body;
+  }
+  >div {
+    padding: 0 10px;
+    >div {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 44px;
+      .fz-15;
+    }
+    &.gender>div:last-child>div {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 44px;
+      width: 100px;
+      >i {
+        margin-bottom: 2px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
