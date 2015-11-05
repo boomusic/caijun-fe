@@ -93,6 +93,36 @@
   > .content > .step:not(:last-child) {
     border-bottom: 1px solid @bg_body;
   }
+  >.content >.step {
+    padding: 10px 0;
+    >.img-wrapper {
+      width: 335/7.5%;
+      padding: 0 10px;
+    }
+    >.text {
+      padding: 0 10px;
+      .fz-12;
+      line-height: 2em;
+      >.step-icon {
+        width: 22px;
+        height: 22px;
+        .inline-block;
+        margin-right: 1em;
+        &.step-1 {
+          background-image: url("img/icon-step-1.png");
+          background-size: 100% 100%;
+        }
+        &.step-2 {
+          background-image: url("img/icon-step-2.png");
+          background-size: 100% 100%;
+        }
+        &.step-3 {
+          background-image: url("img/icon-step-3.png");
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
 }
 
 #m-comment {

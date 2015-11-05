@@ -81,6 +81,37 @@
 #m-method > .content > .step:not(:last-child) {
   border-bottom: 1px solid #ededed;
 }
+#m-method > .content > .step {
+  padding: 10px 0;
+}
+#m-method > .content > .step > .img-wrapper {
+  width: 44.66666667%;
+  padding: 0 10px;
+}
+#m-method > .content > .step > .text {
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 2em;
+}
+#m-method > .content > .step > .text > .step-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+#m-method > .content > .step > .text > .step-icon.step-1 {
+  background-image: url("img/icon-step-1.png");
+  background-size: 100% 100%;
+}
+#m-method > .content > .step > .text > .step-icon.step-2 {
+  background-image: url("img/icon-step-2.png");
+  background-size: 100% 100%;
+}
+#m-method > .content > .step > .text > .step-icon.step-3 {
+  background-image: url("img/icon-step-3.png");
+  background-size: 100% 100%;
+}
 #m-comment > .title {
   font-size: 15px;
   line-height: 33px;

@@ -211,3 +211,18 @@
 .absolute() {
   position: absolute;
 }
+
+.box() {
+  display: -webkit-box;
+  display: -ms-box;
+  display: -o-box;
+  display: -moz-box;
+  display: box;
+}
+.blockFlex(@size) {
+  display: block;
+  -webkit-box-flex: @size;
+  -ms-box-flex: @size;
+  -moz-box-flex: @size;
+  -o-box-flex: @size;
+}

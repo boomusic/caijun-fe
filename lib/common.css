@@ -759,6 +759,65 @@ i.icon-word.x:after {
 .overlay-container.overlay-confirm > .overlay-content-container > .overlay-content > .overlay-confirm-btn > span:active {
   background-color: #f0f0f0;
 }
+.overlay-container.overlay-scroller.bottom > .overlay-content-container > .overlay-content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.overlay-container.overlay-scroller.bottom > .overlay-content-container > .overlay-content > .scroller-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content {
+  width: 100%;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content {
+  width: 100%;
+  font-size: 15px;
+  background-color: #ffffff;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-buttons {
+  line-height: 2.5em;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-buttons > .scroller-cancel,
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-buttons > .scroller-confirm {
+  color: #e34c0b;
+  padding: 0 1em;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns {
+  height: 10em;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-box;
+  display: -o-box;
+  display: -moz-box;
+  display: box;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-column {
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-column > .scroller-item {
+  text-align: center;
+  line-height: 2em;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-focus-border {
+  position: absolute;
+  height: 2em;
+  min-height: 2em;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  top: 4em;
+  left: 0;
+  width: 100%;
+}
 /* nav bar module */
 #navbar {
   height: 50px;

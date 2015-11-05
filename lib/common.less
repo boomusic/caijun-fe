@@ -808,6 +808,61 @@ i.icon-word {
       }
     }
   }
+  &.overlay-scroller {
+    &.bottom > .overlay-content-container > .overlay-content {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      > .scroller-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    > .overlay-content-container > .overlay-content {
+      width: 100%;
+      > .scroller-content {
+        width: 100%;
+        .fz-15;
+        background-color: @white;
+        > .scroller-buttons {
+          line-height: 2.5em;
+          > .scroller-cancel, > .scroller-confirm {
+            .col-red;
+            padding: 0 1em;
+          }
+        }
+        > .scroller-columns {
+          height: 10em;
+          overflow: hidden;
+          .relative;
+          .box;
+          > .scroller-column {
+            .blockFlex(1);
+            height: 100%;
+            overflow: hidden;
+            >.scroller-hover {
+
+            }
+            > .scroller-item {
+              .text-center;
+              line-height: 2em;
+            }
+          }
+          > .scroller-focus-border {
+            .absolute;
+            height: 2em;
+            min-height: 2em;
+            border-top: 1px solid @bg_body;
+            border-bottom: 1px solid @bg_body;
+            top: 4em;
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* nav bar module */
