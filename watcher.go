@@ -7,6 +7,7 @@ import (
     "os/exec"
     "path/filepath"
     "regexp"
+    "strings"
 )
 
 func main() {
@@ -23,7 +24,7 @@ func main() {
             select {
             case event := <-watcher.Events:
                 log.Println("event:", event)
-                if event.Op == fsnotify.Remove {
+                if strings.HasSuffix(event.Name, "_") {
                     continue
                 }
                 stat, err := os.Stat(event.Name)
@@ -31,9 +32,14 @@ func main() {
                     log.Println("get file state error:", err)
                     continue
                 }
-                args := []string{"-vq"}
                 if stat.IsDir() {
                     watcher.Add(event.Name)
+                }
+                if event.Op & fsnotify.Write == 0 && event.Op & fsnotify.Rename == 0 {
+                    continue
+                }
+                args := []string{"-vq"}
+                if stat.IsDir() {
                     args[0] += "r"
                 }
                 args = append(args, event.Name)
