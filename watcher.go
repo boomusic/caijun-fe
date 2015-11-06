@@ -36,7 +36,7 @@ func main() {
                 if stat.IsDir() {
                     watcher.Add(event.Name)
                 }
-                args := []string{"scp", "-vq"}
+                args := []string{"scp", "-q"}
                 if stat.IsDir() {
                     args[1] += "r"
                 } else if event.Op & fsnotify.Write == 0 && event.Op & fsnotify.Rename == 0 {
@@ -45,7 +45,7 @@ func main() {
                 args = append(args, event.Name)
                 args = append(args, path + event.Name)
                 cmd := exec.Command(args[0], args[1:]...)
-                _, err = cmd.Output()
+                _, err = cmd.CombinedOutput()
                 if err != nil {
                     log.Println("scp error:", err)
                 } else {
@@ -61,22 +61,24 @@ func main() {
     ignoreReg := "^\\.idea$|^\\.idea/|/\\.idea$|/\\.idea/" // .idea dir
     ignoreReg += "|^\\.git$|^\\.git/|/\\.git$|/\\.git/" // .git dir
 
-    var walkFunc filepath.WalkFunc = func(path string, info os.FileInfo, err error) error {
+    var walkFunc filepath.WalkFunc = func(name string, info os.FileInfo, err error) error {
         if err != nil {
             return err
         }
         if info.IsDir() {
-            own, err := regexp.Match(ignoreReg, []byte(path))
+            own, err := regexp.Match(ignoreReg, []byte(name))
             if own {
                 // log.Println("ignore dir:", path)
                 return err
             }
-            return watcher.Add(path)
+            return watcher.Add(name)
         }
         return nil
 
     }
+    log.Print("add dirs.....  ")
     err = filepath.Walk("./", walkFunc)
+    log.Println("done.")
     if err != nil {
         log.Fatalf("watch dir error: %s\n", err.Error())
     }
