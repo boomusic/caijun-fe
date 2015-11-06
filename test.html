@@ -10,9 +10,27 @@
     <input type="radio" name="radio" value="1"><br>
     <input type="radio" name="radio" value="2"><br>
     <input type="checkbox" name="checkbox" value="1"><br>
+    <select name="select">
+        <option value="option1">option1</option>
+        <option value="option2">option2</option>
+    </select>
     <span>hello world</span>
 </form>
 <script>
+    document.write('<form id="form"><input type="file" name="file"></form>');
+    var form = document.getElementById('form'),
+            xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        console.log("readyState:", xhr.readyState, arguments)
+    };
+    xhr.onprogress = function() {
+        console.log("progress:", arguments)
+    };
+    xhr.upload.onprogress = function() {
+        console.log("upload.onprogress:", arguments)
+    };
+    xhr.open('POST', '');
+    xhr.send(new FormData(form))
 </script>
 </body>
 </html>

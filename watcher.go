@@ -24,10 +24,10 @@ func main() {
         for {
             select {
             case event := <-watcher.Events:
-                if strings.HasSuffix(event.Name, "_") || event.Op == fsnotify.Chmod {
+                if strings.HasSuffix(event.Name, "_") || event.Op == fsnotify.Chmod || event.Op & fsnotify.Remove != 0 {
                     continue
                 }
-            // log.Println("event:", event)
+                // log.Println("event:", event)
                 stat, err := os.Stat(event.Name)
                 if err != nil {
                     log.Println("get file status error:", err)
