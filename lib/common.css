@@ -838,8 +838,10 @@ i.icon-word.x:after {
 }
 .overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-column > .scroller-column-items > .scroller-item {
   text-align: center;
-  color: #a0a0a0;
   line-height: 2em;
+}
+.overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-column > .scroller-column-items > .scroller-item.disabled {
+  color: #ededed;
 }
 .overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-column > .scroller-column-items > .scroller-item.col-red {
   color: #e34c0b;

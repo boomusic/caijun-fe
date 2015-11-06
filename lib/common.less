@@ -864,10 +864,11 @@ i.icon-word {
               top: 0;
               left: 0;
               width: 100%;
-
               > .scroller-item {
                 .text-center;
-                .col-gray;
+                &.disabled {
+                  color: @bg_body;
+                }
                 &.col-red {
                   .col-red;
                 }

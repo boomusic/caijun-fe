@@ -36,7 +36,7 @@ $(function () {
     for (i in months)
         if (months.hasOwnProperty(i)) {
             column.items.push({
-                value: i + 1,
+                value: +i + 1,
                 label: months[i] + '月',
                 disabled: i > 10 || i < 5
             })
@@ -54,6 +54,15 @@ $(function () {
         })
     }
     config.columns.push(column);
-    console.log(config);
+    config.onChange = function() {
+        console.log(this, arguments);
+    };
+    config.cancelCallback = function() {
+        console.log('cancel', arguments);
+    };
+    config.confirmCallback = function() {
+        console.log('confirm', arguments);
+    };
+    config.hide = false;
     new _.Scroller(config);
 });
