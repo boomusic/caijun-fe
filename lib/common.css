@@ -815,19 +815,19 @@ i.icon-word.x:after {
 }
 .overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-column > .scroller-hover.upper {
   top: 0;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
 }
 .overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-column > .scroller-hover.down {
   bottom: 0;
-  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
-  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
+  background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
+  background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
+  background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
+  background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.1));
 }
 .overlay-container.overlay-scroller > .overlay-content-container > .overlay-content > .scroller-content > .scroller-columns > .scroller-column > .scroller-column-items {
   position: absolute;

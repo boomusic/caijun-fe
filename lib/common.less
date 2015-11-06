@@ -851,19 +851,11 @@ i.icon-word {
               z-index: 1000;
               &.upper {
                 top: 0;
-                background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
-                background-image: -o-linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
-                background-image: -moz-linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
-                background-image: -ms-linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
-                background-image: linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
+                .linearGradient(top, rgba(255, 255, 255, .95), rgba(255, 255, 255, .1));
               }
               &.down {
                 bottom: 0;
-                background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
-                background-image: -o-linear-gradient(bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
-                background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
-                background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
-                background-image: linear-gradient(bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .3));
+                .linearGradient(bottom, rgba(255, 255, 255, .95), rgba(255, 255, 255, .1));
               }
             }
             > .scroller-column-items {
@@ -872,6 +864,7 @@ i.icon-word {
               top: 0;
               left: 0;
               width: 100%;
+
               > .scroller-item {
                 .text-center;
                 .col-gray;

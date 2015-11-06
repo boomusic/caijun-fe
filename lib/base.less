@@ -219,10 +219,19 @@
   display: -moz-box;
   display: box;
 }
+
 .blockFlex(@size) {
   display: block;
   -webkit-box-flex: @size;
   -ms-box-flex: @size;
   -moz-box-flex: @size;
   -o-box-flex: @size;
+}
+
+.linearGradient(@dir, @start, @stop) {
+  background-image: -webkit-linear-gradient(@dir, @start, @stop);
+  background-image: -o-linear-gradient(@dir, @start, @stop);
+  background-image: -moz-linear-gradient(@dir, @start, @stop);
+  background-image: -ms-linear-gradient(@dir, @start, @stop);
+  background-image: linear-gradient(@dir, @start, @stop);
 }
