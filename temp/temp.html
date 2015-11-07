@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1"/>
+    <title>Ajax File Upload</title>
+</head>
+<body>
+<form id="form">
+    <label>文件<input type="file" name="file" id="file"></label><br>
+    <label>单选一<input type="radio" name="radio" value="radio-1"></label>
+    <label>单选二<input type="radio" name="radio" value="radio-2"></label><br>
+    <label>多选一<input type="checkbox" name="checkbox" value="checkbox-1"></label>
+    <label>多选二<input type="checkbox" name="checkbox" value="checkbox-2"></label><br>
+    <label>文本<input type="text" name="hello world" value="hello world"></label><br>
+    <input type="button" id="s-post-form" value="Post Form"><br>
+    <input type="button" id="s-get-form" value="Get Form"><br>
+    <input type="button" id="s-post-file" value="Post File"><br>
+    <input type="button" id="s-get-file" value="Get File"><br>
+    <input type="button" id="s-post-text" value="Post Text"><br>
+    <input type="button" id="s-get-text" value="Get Text">
+</form>
+<div id="process"></div>
+<pre id="result"></pre>
+</body>
+<script src="../lib/ajaxSubmit.js"></script>
+<script src="../lib/zepto-1.1.6.js"></script>
+<script>
+
+    var $process = $('#process');
+    function process(e) {
+        console.log(e);
+    }
+    $('#form').on('click', '#s-post-form', function () {
+        ajaxSubmit({
+            form: document.getElementById('form'),
+            uploadProgress: process,
+            responseProgress: process,
+            method: ajaxSubmit.methods.POST,
+            action: '',
+            enctype: ajaxSubmit.enctypes.FORM_DATA
+        })
+    })
+</script>
+</html>
