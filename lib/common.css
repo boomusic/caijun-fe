@@ -770,6 +770,9 @@ i.icon-word.x:after {
   bottom: 0;
   left: 0;
 }
+.overlay-container.overlay-scroller.middle > .overlay-content-container > .overlay-content > .scroller-contentf {
+  padding-bottom: 12px;
+}
 .overlay-container.overlay-scroller > .overlay-content-container > .overlay-content {
   width: 100%;
 }
